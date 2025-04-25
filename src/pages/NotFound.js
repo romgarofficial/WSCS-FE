@@ -1,11 +1,15 @@
-import { Container, Button, Image } from "react-bootstrap"
+import { Container, Button, Image, Col } from "react-bootstrap"
 import NotFoundImg from "../images/404.png"
 import { Link } from "react-router-dom"
 
 export default function NotFound(){
     return(
-        <Container fluid className="p-5 d-flex justify-content-center align-items-center vh-100 flex-column">
-            <Image src={NotFoundImg} className="img-fluid nf-dimension"/>
+        <Container fluid className="p-5 d-flex justify-content-center align-items-center vh-100 flex-column text-center">
+
+            <Col sm={12} lg={4}>
+                <Image src={NotFoundImg} className="img-fluid"/>
+            </Col>
+        
             <h1 className="display-3 text-primary fw-bold">OOPS!</h1>
             <p className="display-6">The page cannot be found.</p>
 
